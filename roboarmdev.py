@@ -15,7 +15,9 @@ pinch_threshold = 50
 current_finger = None
 
 # Color used for drawing (same for all fingers)
-color = (30, 30, 30)
+#color = (30, 30, 30)
+color = (255, 250, 250)
+
 
 # Timer for controlling display update
 last_display_time = time.time()

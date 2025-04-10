@@ -1,14 +1,15 @@
 import cv2
 from cvzone.HandTrackingModule import HandDetector
-import pyfirmata
+import pyfirmata2 as pyfirmata
+
 
 # === Arduino Setup ===
-board = pyfirmata.Arduino('COM3')  # Replace with your port
+board = pyfirmata.Arduino('COM4')  # Replace with your port
 servos = {
-    "index": board.get_pin('d:2:s'),
-    "middle": board.get_pin('d:3:s'),
-    "ring": board.get_pin('d:4:s'),
-    "little": board.get_pin('d:5:s'),
+    "index": board.get_pin('d:5:s'),
+    "middle": board.get_pin('d:6:s'),
+    "ring": board.get_pin('d:7:s'),
+    "little": board.get_pin('d:8:s'),
 }
 
 # Initial positions (90° is center)
